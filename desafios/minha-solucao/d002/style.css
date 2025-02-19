@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background: linear-gradient(to top, #00008b, #240041);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+main {
+    background-color: #fff;
+    width: 90vw;
+    padding: 30px 20px 20px;
+    border-radius: 10px;
+}
+
+header {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+form div p {
+    font-size: 1.05em;
+}
+
+form p + p {
+    margin-top: 10px;
+}
