@@ -29,14 +29,26 @@
         <?php 
             echo "<p>Analisando o valor que você digitou, <strong> ".number_format($vSegundos, 0, ",", ".")." segundos</strong> equivalem a um total de:</p>";
 
-            // Não consegui resolver esse desafío
+            $semanas = (int) ($vSegundos / 604800);
+            $dias = (int) ($vSegundos / 3600); // Não consegui resolver
+            $horas = (int) (($vSegundos % 86400) / 3600);
+            $minutos = (int) (($vSegundos / 60) % 60);
+            $segundos = (int) ($vSegundos % 60);
 
             echo "<ul>";
-                echo "<li>0 semanas</li>";
-                echo "<li>0 dias</li>";
-                echo "<li>0 horas</li>";
-                echo "<li>0 minutos</li>";
-                echo "<li>0 segundos</li>";
+                echo "<li>$semanas semanas</li>";
+                echo "<li>$dias dias</li>";
+                echo "<li>$horas horas</li>";
+                echo "<li>$minutos minutos</li>";
+                echo "<li>$segundos segundos</li>";
+            echo "</ul>";
+
+            echo "<ul>";
+                echo "<li>$semanas semanas</li>";
+                echo "<li>$dias dias</li>";
+                echo "<li>$horas horas</li>";
+                echo "<li>$minutos minutos</li>";
+                echo "<li>$segundos segundos</li>";
             echo "</ul>";
         ?>
     </section>
